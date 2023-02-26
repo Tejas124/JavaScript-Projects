@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <div class="circle1"></div>
+    <div class="circle2"></div>
+
+    <div class="wrapper">
+        <div class="card-wrapper">
+            <div>
+                <img src="./assets/img.jpg" alt="Tejas Shinde was here">
+            </div>
+
+            <div>
+                <h2>Tejas Shinde</h2>
+            </div>
+
+            <div>
+                <h3>Web Developer</h3>
+            </div>
+
+            <div class="bottom-group">
+                <button class="btn-share btn-card" onclick="openModal()">
+                    <i class="fa-solid fa-share"></i>
+                    Share My Profile
+                </button>
+                <button class="btn-follow btn-card">Follow me</button>
+            </div>
+        
+        </div>
+    </div>
+
+    <!-- Share modal -->
+    <div class="modal">
+        <div class="modal-header">
+            <h1>Share My Profile</h1>
+            <i onclick="closeModal()" class="fa-solid fa-xmark close"></i>
+        </div>
+
+        <div>
+
+            <h3>Share this via</h3>
+
+            <div class="icon-container">
+                <a href="https://www.linkedin.com/in/tejas-sanjay-shinde/" target="_blank" class="icon" id="linkedin">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+
+                <a href="https://twitter.com/tejassh12" target="_blank" class="icon" id="twitter">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+
+                <a href="https://www.instagram.com/_its_tejas_12/" class="icon" id="instagram">
+                <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="https://github.com/Tejas124" target="_blank" class="icon" id="github">
+                <i class="fa-brands fa-github"></i>
+                </a>
+
+                <a href="https://t.me/tejas_12042002" class="icon" id="telegram">
+                <i class="fa-brands fa-telegram"></i>
+                </a>
+            </div>
+
+        </div>
+    </div>
+    
+    <div class="overlay" onclick="closeModal()"></div>
+
+    <script src="./index.js"></script>
+    <script src="https://kit.fontawesome.com/58a810656e.js" crossorigin="anonymous"></script>
+</body>
+</html>
